@@ -8,7 +8,41 @@
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
 <title>GOALTALK</title>
+<style>
+	.image-container img {
+            max-width: 100%; /* 이미지의 최대 너비를 부모 요소에 맞추기 */
+            height: auto;
+            /* 그 외 이미지 스타일 */
+        }
+        
+        .image-container {
+        position: relative;
+        width: 100%;
+        text-align: left;
+    }
+
+    .image-text {
+        position: absolute;
+        top: 75%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        color: white; /* 텍스트 색상 설정 */
+        text-align: left;
+    }
+
+    /* 텍스트 스타일링 */
+    .image-text h2 {
+        font-size: 50px;
+        /* 다른 스타일 옵션들 */
+    }
+
+    .image-text p {
+        font-size: 30px;
+        /* 다른 스타일 옵션들 */
+    }
+</style>
 </head>
+
 <body>
 	<%
 		String userID = null;
@@ -18,7 +52,7 @@
 	%>
 
 	
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default" style="margin-bottom:0px;">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
 			data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -75,6 +109,14 @@
 			
 		</div>
 	</nav>
+	
+	<div class="image-container">
+        <img src="media/main.jpg" alt="Your Image">
+        <div class="image-text">
+        <h2>GOALTALK</h2>
+        <p>GOALTALK에서 축구팬들과 이야기를해보세요.</p>
+    </div>
+    </div>
 	
 	
 	 
